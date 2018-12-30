@@ -1,0 +1,1184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project Management System</name>
+    </assembly>
+    <members>
+        <member name="T:Project_Management_System.Models.Dao.Dao_Implementation.ProjectDaoImpl">
+            <summary>Implements ProjectDao interface and defines Project related functions for database manipulation.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.ProjectDaoImpl.exists(System.String)">
+            <summary>Checks if a project exists.</summary>
+            <param name="text">Project code</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.ProjectDaoImpl.getProjectForCode(System.String)">
+            <summary>Returns a project object for a given project code.</summary>
+            <param name="text">Project code</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.ProjectDaoImpl.getProjectManagers">
+            <summary>Returns a list of users that have role Project Manager</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.ProjectDaoImpl.getProjectIdForName(System.String)">
+            <summary>Returns a project object for a given project name</summary>
+            <param name="name">Project name</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.ProjectDaoImpl.getProjects">
+            <summary>Returns a list of all projects.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.ProjectDaoImpl.getProjectNameForId(System.Nullable{System.Int32})">
+            <summary>Returns a project name for a given project id.</summary>
+            <param name="projectid">Project id</param>
+        </member>
+        <member name="T:Project_Management_System.Models.Dao.Dao_Implementation.RoleDaoImpl">
+            <summary>Implements RoleDao interface and defines Role related functions for database manipulation.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.RoleDaoImpl.getRole(System.String)">
+            <summary>Returns a role object for a given role name.</summary>
+            <param name="text">Role name</param>
+        </member>
+        <member name="T:Project_Management_System.Models.Dao.Dao_Implementation.TaskDaoImpl">
+            <summary>Implements TaskDao interface and defines Task related functions for database manipulation.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.TaskDaoImpl.getTasks">
+            <summary>Returns a list of all tasks.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.TaskDaoImpl.getTasksForProjectId(System.Int32)">
+            <summary>Returns a list of tasks for a given project id</summary>
+            <param name="id">Project id</param>
+        </member>
+        <member name="T:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl">
+            <summary>Implements UserDao interface and defines User related functions for database manipulation.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.exists(System.String)">
+            <summary>Checks if an user exists.</summary>
+            <param name="username">
+              <para>User's username</para>
+            </param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.isValid(System.String,System.String)">
+            <summary>Checks if an user is valid.</summary>
+            <param name="username">User's username</param>
+            <param name="password">User's password</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.getUserForId(System.Int32)">
+            <summary>Returns an user object for a given user id.</summary>
+            <param name="id">User's id</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.getUserForUsername(System.String)">
+            <summary>Returns an user object for a given username.</summary>
+            <param name="username">User's username</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.getUsers">
+            <summary>Returns a list of all users.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.getUsersWithoutAdmin">
+            <summary>Returns a list of users which role is Project Manager or Developer.</summary>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.checkDevelopersTasks(System.String,System.String)">
+            <summary>Checks if a developer have three tasks.</summary>
+            <param name="user">Texfield's input</param>
+            <param name="splitted">User's username</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.formatFullName(System.Nullable{System.Int32})">
+            <summary>Returns a formatted user full name.</summary>
+            <param name="userid">User's id</param>
+        </member>
+        <member name="M:Project_Management_System.Models.Dao.Dao_Implementation.UserDaoImpl.getUserIdForFullName(System.String,System.String)">
+            <summary>Returns a user id for a given full name.</summary>
+            <param name="name">User's first name</param>
+            <param name="surname">User's last name</param>
+        </member>
+        <member name="T:Project_Management_System.Models.Dao.ProjectDao">
+            <summary>An interface that contains various Project related functions for database manipulation.</summary>
+        </member>
+        <member name="T:Project_Management_System.Models.Dao.RoleDao">
+            <summary>An interface that contains various Role related functions for database manipulation.</summary>
+        </member>
+        <member name="T:Project_Management_System.Models.Dao.TaskDao">
+            <summary>An interface that contains various Task related functions for database manipulation.</summary>
+        </member>
+        <member name="T:Project_Management_System.Models.Dao.UserDao">
+            <summary>An interface that contains various User related functions for database manipulation.</summary>
+        </member>
+        <member name="T:Project_Management_System.Models.Project">
+            <summary>A POCO class that contains Project related fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Models.Role">
+            <summary>A POCO class that contains Role related fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Models.Task">
+            <summary>A POCO class that contains Task related fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Models.User">
+            <summary>A POCO class that contains User related fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.PMSDBDataSet1">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.AddNewProjectViewPresenter">
+            <summary>Administrator's project presenter that contains functions for adding a project to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewProjectViewPresenter.addNewProject">
+            <summary>Adds a new project to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewProjectViewPresenter.initCBox">
+            <summary>Initializes a ComboBox list of Project Managers.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewProjectViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.AddNewTaskViewPresenter">
+            <summary>Administrator's task presenter that contains functions for adding a task to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewTaskViewPresenter.addNewTask">
+            <summary>Adds a new task to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewTaskViewPresenter.initStatus">
+            <summary>Initializes a ComboBox list of status.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewTaskViewPresenter.initUsers">
+            <summary>Initializes a ComboBox list of Project Managers and Developers.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewTaskViewPresenter.initProjects">
+            <summary>Initializes a ComboBox list of projects.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewTaskViewPresenter.initProgress">
+            <summary>Initializes a TextField based on status input.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewTaskViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewUserViewPresenter.addNewUser">
+            <summary>Adds a new user to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewUserViewPresenter.initRoles">
+            <summary>Initializes a ComboBox list of Roles.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AddNewUserViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.AdministratorAddMenuViewPresenter">
+            <summary>Initializes administrator's add menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorAddMenuViewPresenter.initAddNewProjectView">
+            <summary>
+              <para>Initializes add new project view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorAddMenuViewPresenter.initAddNewTaskView">
+            <summary>
+              <para>Initializes add new task view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorAddMenuViewPresenter.initAddNewUserView">
+            <summary>
+              <para>Initializes add new user view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.AdministratorDeleteMenuViewPresenter">
+            <summary>Initializes administrator's delete menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorDeleteMenuViewPresenter.initDeleteProjectView">
+            <summary>
+              <para>Initializes delete project view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorDeleteMenuViewPresenter.initDeleteTaskView">
+            <summary>
+              <para>Initializes delete task view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorDeleteMenuViewPresenter.initDeleteUserView">
+            <summary>
+              <para>Initializes delete user view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.AdministratorModifyMenuViewPresenter">
+            <summary>Initializes administrator's modify menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorModifyMenuViewPresenter.initModifyProjectView">
+            <summary>
+              <para>Initializes modify project view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorModifyMenuViewPresenter.initModifyTaskView">
+            <summary>
+              <para>Initializes modify task view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorModifyMenuViewPresenter.initModifyUserView">
+            <summary>
+              <para>Initializes modify user view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.AdministratorViewMenuViewPresenter">
+            <summary>Initializes administrator's view menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewMenuViewPresenter.viewProjects">
+            <summary>
+              <para>Initializes view project view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewMenuViewPresenter.viewTasks">
+            <summary>
+              <para>Initializes view task view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewMenuViewPresenter.viewUsers">
+            <summary>
+              <para>Initializes view user view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.AdministratorViewPresenter">
+            <summary>Initializes secondary menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewPresenter.initPanelsBackColor">
+            <summary>
+              <para>Initializes panel's back color.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewPresenter.initAddMenuView">
+            <summary>
+              <para>Initializes add menu view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewPresenter.initModifyMenuView">
+            <summary>
+              <para>Initializes modify menu view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewPresenter.initDeleteMenuView">
+            <summary>
+              <para>Initializes delete menu view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.AdministratorViewPresenter.initViewMenuView">
+            <summary>
+              <para>Initializes view menu view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.DeleteProjectViewPresenter">
+            <summary>Administrator's project presenter that contains functions for deleting a project from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.DeleteProjectViewPresenter.deleteProject">
+            <summary>Deletes a project from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.DeleteProjectViewPresenter.initList">
+            <summary>Initializes a list of projects.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.DeleteTaskViewPresenter">
+            <summary>Administrator's task presenter that contains functions for deleting a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.DeleteTaskViewPresenter.deleteTask">
+            <summary>Deletes a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.DeleteTaskViewPresenter.initList">
+            <summary>Initializes a list of tasks.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.DeleteUserViewPresenter">
+            <summary>Administrator's user presenter that contains functions for deleting an user from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.DeleteUserViewPresenter.deleteUser">
+            <summary>Deletes an user from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.DeleteUserViewPresenter.initList">
+            <summary>Initializes a list of users.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Developer.DeveloperModifyMenuViewPresenter">
+            <summary>Initializes developer's modify menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.DeveloperModifyMenuViewPresenter.initModifyTaskView">
+            <summary>
+              <para>Initializes modify task view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Developer.DeveloperViewMenuViewPresenter">
+            <summary>Initializes developer's view menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.DeveloperViewMenuViewPresenter.viewTasks">
+            <summary>
+              <para>Initializes view task view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Developer.DeveloperViewPresenter">
+            <summary>Initializes secondary menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.DeveloperViewPresenter.initPanelsBackColor">
+            <summary>
+              <para>Initializes panel's back color.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.DeveloperViewPresenter.initModifyMenuView">
+            <summary>
+              <para>Initializes modify menu view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.DeveloperViewPresenter.initViewMenuView">
+            <summary>
+              <para>Initializes view menu view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Developer.ModifyTaskViewPresenter">
+            <summary>Developer's task presenter that contains functions for modifying a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.ModifyTaskViewPresenter.modifyTask">
+            <summary>Modifies a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.ModifyTaskViewPresenter.initList">
+            <summary>Initializes a list of tasks.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.ModifyTaskViewPresenter.initStatus">
+            <summary>Initializes a list of status.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.ModifyTaskViewPresenter.initProgress">
+            <summary>Initializes a TextField based on status input.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.ModifyTaskViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Developer.ViewTasksViewPresenter">
+            <summary>Developer's view presenter that contains functions for viewing tasks from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Developer.ViewTasksViewPresenter.initList">
+            <summary>Initializes a list of tasks.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.ModifyProjectViewPresenter">
+            <summary>Administrator's project presenter that contains functions for modifying a project from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyProjectViewPresenter.modifyProject">
+            <summary>Modifies a project from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyProjectViewPresenter.initList">
+            <summary>Initializes a list of projects.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyProjectViewPresenter.initProjectManagers">
+            <summary>Initializes a list of Project Managers.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyProjectViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.ModifyTaskViewPresenter">
+            <summary>Administrator's task presenter that contains functions for modifying a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyTaskViewPresenter.modifyTask">
+            <summary>Modifies a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyTaskViewPresenter.initList">
+            <summary>Initializes a list of tasks.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyTaskViewPresenter.initStatus">
+            <summary>Initializes a list of status.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyTaskViewPresenter.initUsers">
+            <summary>Initializes a list of users.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyTaskViewPresenter.initProjects">
+            <summary>Initializes a list of projects.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyTaskViewPresenter.initProgress">
+            <summary>Initializes a TextField based on status input.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyTaskViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.ModifyUserViewPresenter">
+            <summary>Administrator's user presenter that contains functions for modifying an user from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyUserViewPresenter.modifyUser">
+            <summary>Modifies an user from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyUserViewPresenter.initList">
+            <summary>Initializes a list of users.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyUserViewPresenter.initRoles">
+            <summary>Initializes a ComboBox list of Roles.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ModifyUserViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.ViewProjectsViewPresenter">
+            <summary>Administrator's view presenter that contains functions for viewing a projects from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewProjectsViewPresenter.initList">
+            <summary>Initializes a list of projects.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewProjectsViewPresenter.filter">
+            <summary>Filters a list of projects for a given criteria.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewProjectsViewPresenter.reset">
+            <summary>Resets ListView items.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewProjectsViewPresenter.filterFields">
+            <summary>Returns a list of filtered projects.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.ViewTasksViewPresenter">
+            <summary>Administrator's view presenter that contains functions for viewing tasks from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewTasksViewPresenter.initList">
+            <summary>Initializes a list of tasks.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewTasksViewPresenter.filter">
+            <summary>Filters a list of tasks for a given criteria.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewTasksViewPresenter.reset">
+            <summary>Resets ListView items.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewTasksViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewTasksViewPresenter.initFields(System.Collections.Generic.List{Project_Management_System.Models.Task})">
+            <summary>Initializes input fields.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewTasksViewPresenter.filterFields">
+            <summary>Returns a list of filtered tasks.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.ViewUsersViewPresenter">
+            <summary>Administrator's view presenter that contains functions for viewing users from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewUsersViewPresenter.initList">
+            <summary>Initializes a list of users.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewUsersViewPresenter.filter">
+            <summary>Filters a list of users for a given criteria.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewUsersViewPresenter.reset">
+            <summary>Resets ListView items.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewUsersViewPresenter.initRoles">
+            <summary>Initializes a ComboBox list of Roles.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.ViewUsersViewPresenter.filterFields">
+            <summary>Returns a list of filtered users.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.AddNewProjectViewPresenter">
+            <summary>Project Manager's project presenter that contains functions for adding a project to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewProjectViewPresenter.addNewProject">
+            <summary>Adds a new project to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewProjectViewPresenter.initUsers">
+            <summary>Initializes a ComboBox list of users.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewProjectViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.AddNewTaskViewPresenter">
+            <summary>Project Manager's task presenter that contains functions for adding a task to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewTaskViewPresenter.addNewTask">
+            <summary>Adds a new task to a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewTaskViewPresenter.initStatus">
+            <summary>Initializes a ComboBox list of status.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewTaskViewPresenter.initUsers">
+            <summary>Initializes a ComboBox list of users.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewTaskViewPresenter.initProjects">
+            <summary>Initializes a ComboBox list of projects.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewTaskViewPresenter.initProgress">
+            <summary>Initializes a TextField based on status input.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.AddNewTaskViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.ModifyTaskViewPresenter">
+            <summary>Project Manager's task presenter that contains functions for modifying a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ModifyTaskViewPresenter.modifyTask">
+            <summary>Modifies a task from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ModifyTaskViewPresenter.initList">
+            <summary>Initializes a list of tasks.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ModifyTaskViewPresenter.initStatus">
+            <summary>Initializes a list of status.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ModifyTaskViewPresenter.initUsers">
+            <summary>Initializes a list of users.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ModifyTaskViewPresenter.initProgress">
+            <summary>Initializes a TextField based on status input.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ModifyTaskViewPresenter.resetFields">
+            <summary>Resets input fields.</summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.ProjectManagerAddMenuViewPresenter">
+            <summary>Initializes Project Manager's add menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerAddMenuViewPresenter.initAddNewProjectView">
+            <summary>
+              <para>Initializes add new project view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerAddMenuViewPresenter.initAddNewTaskView">
+            <summary>
+              <para>Initializes add new task view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.ProjectManagerModifyMenuViewPresenter">
+            <summary>Initializes Project Manager's modify menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerModifyMenuViewPresenter.initModifyTaskView">
+            <summary>
+              <para>Initializes modify task view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewMenuViewPresenter">
+            <summary>Initializes Project Manager's view menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewMenuViewPresenter.initViewProjectsView">
+            <summary>
+              <para>Initializes view project view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewMenuViewPresenter.initViewTasksView">
+            <summary>
+              <para>Initializes view task view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewPresenter">
+            <summary>Initializes secondary menu views.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewPresenter.initPanelsBackColor">
+            <summary>
+              <para>Initializes panel's back color.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewPresenter.initAddMenuView">
+            <summary>
+              <para>Initializes add menu view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewPresenter.initModifyMenuView">
+            <summary>
+              <para>Initializes modify menu view.</para>
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ProjectManagerViewPresenter.initViewMenuView">
+            <summary>
+              <para>Initializes view menu view.</para>
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.ViewProjectsViewPresenter">
+            <summary>Project Manager's view presenter that contains functions for viewing a projects from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ViewProjectsViewPresenter.initList">
+            <summary>Initializes a list of projects.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ViewProjectsViewPresenter.formatProgress(System.Int32)">
+            <summary>Returns formatted progress based on tasks of a project, for a given project id.</summary>
+            <param name="id">Project id</param>
+        </member>
+        <member name="T:Project_Management_System.Presenters.Project_Manager.ViewTasksViewPresenter">
+            <summary>Project Manager's view presenter that contains functions for viewing tasks from a database.</summary>
+        </member>
+        <member name="M:Project_Management_System.Presenters.Project_Manager.ViewTasksViewPresenter.initList">
+            <summary>Initializes a list of tasks.</summary>
+        </member>
+        <member name="T:Project_Management_System.Util">
+            <summary>An Util class that contains various common functions.</summary>
+        </member>
+        <member name="M:Project_Management_System.Util.parseString(System.String)">
+            <summary>Returns a parsed integer given in a string format.</summary>
+            <param name="message">
+              <para>String to be parsed</para>
+            </param>
+        </member>
+        <member name="M:Project_Management_System.Util.split(System.String)">
+            <summary>Returns a splitted username.</summary>
+            <param name="message">String to be splitted</param>
+        </member>
+        <member name="M:Project_Management_System.Util.initStatus(System.Windows.Forms.ComboBox)">
+            <summary>Initializes combo box's items for status.</summary>
+            <param name="box">ComboBox</param>
+        </member>
+        <member name="M:Project_Management_System.Util.expandListViewHeader(System.Windows.Forms.ListView)">
+            <summary>Expands list columns.</summary>
+            <param name="list">ListView</param>
+        </member>
+        <member name="M:Project_Management_System.Util.isInt(System.String)">
+            <summary>Checks if a given input is an integer.</summary>
+            <param name="message">
+              <para>String to be parsed</para>
+            </param>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Add_Views.AddNewProjectView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Add_Views.AddNewProjectView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Add_Views.AddNewProjectView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Add_Views.AddNewTaskView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Add_Views.AddNewTaskView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Add_Views.AddNewTaskView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Add_Views.AddNewUserView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Add_Views.AddNewUserView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Add_Views.AddNewUserView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.AdministratorDeleteMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.AdministratorDeleteMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.AdministratorDeleteMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.AdministratorModifyMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.AdministratorModifyMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.AdministratorModifyMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.AdministratorViewMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.AdministratorViewMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.AdministratorViewMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Delete_Views.DeleteProjectView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Delete_Views.DeleteProjectView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Delete_Views.DeleteProjectView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Delete_Views.DeleteTaskView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Delete_Views.DeleteTaskView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Delete_Views.DeleteTaskView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Delete_Views.DeleteUserView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Delete_Views.DeleteUserView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Delete_Views.DeleteUserView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Modify_Views.ModifyProjectView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Modify_Views.ModifyProjectView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Modify_Views.ModifyProjectView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Modify_Views.ModifyTaskView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Modify_Views.ModifyTaskView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Modify_Views.ModifyTaskView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.Modify_Views.ModifyUserView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Modify_Views.ModifyUserView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.Modify_Views.ModifyUserView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.View_Views.ViewProjectsView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.View_Views.ViewProjectsView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.View_Views.ViewProjectsView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.View_Views.ViewTasksView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.View_Views.ViewTasksView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.View_Views.ViewTasksView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Administrator.View_Views.ViewUsersView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.View_Views.ViewUsersView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Administrator.View_Views.ViewUsersView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.AdministratorAddMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.AdministratorAddMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.AdministratorAddMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.AdministratorView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.AdministratorView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.AdministratorView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Developer.DeveloperModifyMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.DeveloperModifyMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.DeveloperModifyMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Developer.DeveloperView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.DeveloperView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.DeveloperView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Developer.DeveloperViewMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.DeveloperViewMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.DeveloperViewMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Developer.Modify.ModifyTaskView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.Modify.ModifyTaskView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.Modify.ModifyTaskView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Developer.View_Views.ViewTasksView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.View_Views.ViewTasksView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Developer.View_Views.ViewTasksView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.Add_Views.AddNewProjectView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.Add_Views.AddNewProjectView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.Add_Views.AddNewProjectView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.Add_Views.AddNewTaskView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.Add_Views.AddNewTaskView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.Add_Views.AddNewTaskView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.Modify_Views.ModifyTaskView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.Modify_Views.ModifyTaskView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.Modify_Views.ModifyTaskView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.ProjectManagerAddMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerAddMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerAddMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.ProjectManagerModifyMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerModifyMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerModifyMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.ProjectManagerView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.ProjectManagerViewMenuView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerViewMenuView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.ProjectManagerViewMenuView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.View_Menu.ViewProjectsView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.View_Menu.ViewProjectsView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.View_Menu.ViewProjectsView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Views.Project_Manager.View_Menu.ViewTasksView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.View_Menu.ViewTasksView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Views.Project_Manager.View_Menu.ViewTasksView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Project_Management_System.Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Project_Management_System.Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Project_Management_System.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Project_Management_System.Sql">
+            <summary>Extends DbContext class in order to provide database access.</summary>
+        </member>
+        <member name="M:Project_Management_System.Sql.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Initializes the context.</summary>
+            <param name="modelBuilder">
+              <para>DbModelBuilder object</para>
+            </param>
+        </member>
+        <member name="T:Project_Management_System.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Project_Management_System.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Project_Management_System.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

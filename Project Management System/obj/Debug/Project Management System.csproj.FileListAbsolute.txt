@@ -1,0 +1,162 @@
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\nunit.engine.dll
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\nunit.engine.api.dll
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\Project Management System.exe.config
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\Project Management System.exe
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\Project Management System.pdb
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\EntityFramework.dll
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\MaterialSkin.dll
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\nunit.framework.dll
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\EntityFramework.xml
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\nunit.framework.pdb
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\nunit.framework.xml
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Migrations.Initial.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewProjectView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewTaskView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewUserView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.AdministratorAddMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorDeleteMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorModifyMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.AdministratorView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorViewMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteProjectView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteTaskView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteUserView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyProjectView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyTaskView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyUserView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewProjectsView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewTasksView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewUsersView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperModifyMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperViewMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.Modify.ModifyTaskView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.View_Views.ViewTasksView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Login.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Properties.Resources.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Add_Views.AddNewProjectView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Add_Views.AddNewTaskView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Modify_Views.ModifyTaskView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerAddMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerModifyMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerViewMenuView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.View_Menu.ViewProjectsView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.View_Menu.ViewTasksView.resources
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project Management System.csproj.GenerateResource.Cache
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project Management System.exe
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project Management System.pdb
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\obj\Debug\Project Management System.csprojResolveAssemblyReference.cache
+C:\Users\KORISNIK\documents\visual studio 2015\Projects\Project Management System\Project Management System\bin\Debug\Project Management System.XML
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\nunit.engine.dll
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\nunit.engine.api.dll
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.exe.config
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.XML
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.exe
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.pdb
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.dll
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\MaterialSkin.dll
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\nunit.framework.dll
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.xml
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\nunit.framework.pdb
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\bin\Debug\nunit.framework.xml
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.csprojResolveAssemblyReference.cache
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewProjectView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewTaskView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewUserView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.AdministratorAddMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorDeleteMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorModifyMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.AdministratorView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorViewMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteProjectView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteTaskView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteUserView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyProjectView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyTaskView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyUserView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewProjectsView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewTasksView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewUsersView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperModifyMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperViewMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.Modify.ModifyTaskView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.View_Views.ViewTasksView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Login.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Properties.Resources.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Add_Views.AddNewProjectView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Add_Views.AddNewTaskView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Modify_Views.ModifyTaskView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerAddMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerModifyMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerViewMenuView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.View_Menu.ViewProjectsView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.View_Menu.ViewTasksView.resources
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.csproj.GenerateResource.Cache
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.exe
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.pdb
+C:\Users\Dejan\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Migrations.Initial.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.exe.config
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.XML
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.exe
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.pdb
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\nunit.engine.dll
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\nunit.engine.api.dll
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.exe
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\Project Management System.pdb
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.dll
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\MaterialSkin.dll
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\nunit.framework.dll
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.xml
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\nunit.framework.pdb
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\bin\Debug\nunit.framework.xml
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.csprojResolveAssemblyReference.cache
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Migrations.Initial.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewProjectView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewTaskView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Add_Views.AddNewUserView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.AdministratorAddMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorDeleteMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorModifyMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.AdministratorView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.AdministratorViewMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteProjectView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteTaskView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Delete_Views.DeleteUserView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyProjectView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyTaskView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.Modify_Views.ModifyUserView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewProjectsView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewTasksView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Administrator.View_Views.ViewUsersView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperModifyMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.DeveloperViewMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.Modify.ModifyTaskView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Developer.View_Views.ViewTasksView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Login.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Properties.Resources.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Add_Views.AddNewProjectView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Add_Views.AddNewTaskView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.Modify_Views.ModifyTaskView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerAddMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerModifyMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.ProjectManagerViewMenuView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.View_Menu.ViewProjectsView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project_Management_System.Views.Project_Manager.View_Menu.ViewTasksView.resources
+C:\Users\KORISNIK\Desktop\Project Management System\Project Management System\obj\Debug\Project Management System.csproj.GenerateResource.Cache
