@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit3TestAdapter.3.11.2\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.11.2\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F796D798-4D17-42C6-A10F-B482FA47FF9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_Management_System</RootNamespace>
+    <AssemblyName>Project Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Project Management System.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201812202202133_Initial.cs" />
+    <Compile Include="Migrations\201812202202133_Initial.Designer.cs">
+      <DependentUpon>201812202202133_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Dao\Dao Implementation\ProjectDaoImpl.cs" />
+    <Compile Include="Models\Dao\Dao Implementation\RoleDaoImpl.cs" />
+    <Compile Include="Models\Dao\Dao Implementation\TaskDaoImpl.cs" />
+    <Compile Include="Models\Dao\Dao Implementation\UserDaoImpl.cs" />
+    <Compile Include="Models\Dao\ProjectDao.cs" />
+    <Compile Include="Models\Dao\RoleDao.cs" />
+    <Compile Include="Models\Dao\TaskDao.cs" />
+    <Compile Include="Models\Dao\UserDao.cs" />
+    <Compile Include="PMSDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presenters\Administrator\AddNewProjectViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\AddNewTaskViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\AddNewUserViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\AdministratorAddMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\AdministratorDeleteMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\AdministratorModifyMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\AdministratorViewMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\AdministratorViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\DeleteProjectViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\DeleteTaskViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\DeleteUserViewPresenter.cs" />
+    <Compile Include="Presenters\Developer\DeveloperModifyMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Developer\DeveloperViewMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Developer\DeveloperViewPresenter.cs" />
+    <Compile Include="Presenters\Developer\ModifyTaskViewPresenter.cs" />
+    <Compile Include="Presenters\Developer\ViewTasksViewPresenter.cs" />
+    <Compile Include="Presenters\LoginViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\ModifyProjectViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\ModifyTaskViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\ModifyUserViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\ViewProjectsViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\ViewTasksViewPresenter.cs" />
+    <Compile Include="Presenters\Administrator\ViewUsersViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\AddNewProjectViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\AddNewTaskViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\ModifyTaskViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\ProjectManagerAddMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\ProjectManagerModifyMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\ProjectManagerViewMenuViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\ProjectManagerViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\ViewProjectsViewPresenter.cs" />
+    <Compile Include="Presenters\Project Manager\ViewTasksViewPresenter.cs" />
+    <Compile Include="Tests\Models\Dao\ProjectDaoTest.cs" />
+    <Compile Include="Tests\Models\Dao\UserDaoTest.cs" />
+    <Compile Include="Tests\UtilTest.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Views\Administrator\Add Views\AddNewProjectView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Add Views\AddNewProjectView.Designer.cs">
+      <DependentUpon>AddNewProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Add Views\AddNewTaskView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Add Views\AddNewTaskView.Designer.cs">
+      <DependentUpon>AddNewTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Add Views\AddNewUserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Add Views\AddNewUserView.Designer.cs">
+      <DependentUpon>AddNewUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Add Views\IAddNewUserView.cs" />
+    <Compile Include="Views\Administrator\Add Views\IAdministratorAddMenuView.cs" />
+    <Compile Include="Views\Administrator\Add Views\IAddNewProjectView.cs" />
+    <Compile Include="Views\Administrator\Add Views\IAddNewTaskView.cs" />
+    <Compile Include="Views\Administrator\AdministratorAddMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorAddMenuView.Designer.cs">
+      <DependentUpon>AdministratorAddMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorDeleteMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorDeleteMenuView.Designer.cs">
+      <DependentUpon>AdministratorDeleteMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorModifyMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorModifyMenuView.Designer.cs">
+      <DependentUpon>AdministratorModifyMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorView.Designer.cs">
+      <DependentUpon>AdministratorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorViewMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\AdministratorViewMenuView.Designer.cs">
+      <DependentUpon>AdministratorViewMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Delete Views\DeleteProjectView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Delete Views\DeleteProjectView.Designer.cs">
+      <DependentUpon>DeleteProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Delete Views\DeleteTaskView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Delete Views\DeleteTaskView.Designer.cs">
+      <DependentUpon>DeleteTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Delete Views\DeleteUserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Delete Views\DeleteUserView.Designer.cs">
+      <DependentUpon>DeleteUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Delete Views\IAdministratorDeleteMenuView.cs" />
+    <Compile Include="Views\Administrator\Delete Views\IDeleteProjectView.cs" />
+    <Compile Include="Views\Administrator\Delete Views\IDeleteTaskView.cs" />
+    <Compile Include="Views\Administrator\Modify Views\IAdministratorModifyMenuView.cs" />
+    <Compile Include="Views\Administrator\Delete Views\IDeleteUserView.cs" />
+    <Compile Include="Views\Administrator\Modify Views\IModifyProjectView.cs" />
+    <Compile Include="Views\Administrator\Modify Views\IModifyTaskView.cs" />
+    <Compile Include="Views\Administrator\Modify Views\IModifyUserView.cs" />
+    <Compile Include="Views\Administrator\Modify Views\ModifyProjectView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Modify Views\ModifyProjectView.Designer.cs">
+      <DependentUpon>ModifyProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Modify Views\ModifyTaskView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Modify Views\ModifyTaskView.Designer.cs">
+      <DependentUpon>ModifyTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\Modify Views\ModifyUserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\Modify Views\ModifyUserView.Designer.cs">
+      <DependentUpon>ModifyUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\View Views\IAdministratorViewMenuView.cs" />
+    <Compile Include="Views\Administrator\View Views\IViewProjectsView.cs" />
+    <Compile Include="Views\Administrator\View Views\IViewTasksView.cs" />
+    <Compile Include="Views\Administrator\View Views\IViewUsersView.cs" />
+    <Compile Include="Views\Administrator\View Views\ViewProjectsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\View Views\ViewProjectsView.Designer.cs">
+      <DependentUpon>ViewProjectsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\View Views\ViewTasksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\View Views\ViewTasksView.Designer.cs">
+      <DependentUpon>ViewTasksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\View Views\ViewUsersView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Administrator\View Views\ViewUsersView.Designer.cs">
+      <DependentUpon>ViewUsersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrator\IAdministratorView.cs" />
+    <Compile Include="Views\Developer\DeveloperModifyMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Developer\DeveloperModifyMenuView.Designer.cs">
+      <DependentUpon>DeveloperModifyMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Developer\DeveloperView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Developer\DeveloperView.Designer.cs">
+      <DependentUpon>DeveloperView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Developer\DeveloperViewMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Developer\DeveloperViewMenuView.Designer.cs">
+      <DependentUpon>DeveloperViewMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Developer\IDeveloperView.cs" />
+    <Compile Include="Views\Developer\Modify Views\IDeveloperModifyMenuView.cs" />
+    <Compile Include="Views\Developer\Modify Views\IModifyTaskView.cs" />
+    <Compile Include="Views\Developer\Modify Views\ModifyTaskView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Developer\Modify Views\ModifyTaskView.Designer.cs">
+      <DependentUpon>ModifyTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Developer\View Views\IDeveloperViewMenuView.cs" />
+    <Compile Include="Views\Developer\View Views\IViewTasksView.cs" />
+    <Compile Include="Views\Developer\View Views\ViewTasksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Developer\View Views\ViewTasksView.Designer.cs">
+      <DependentUpon>ViewTasksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ILoginView.cs" />
+    <Compile Include="Views\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Task.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sql.cs" />
+    <Compile Include="Views\Project Manager\Add Views\AddNewProjectView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\Add Views\AddNewProjectView.Designer.cs">
+      <DependentUpon>AddNewProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\Add Views\AddNewTaskView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\Add Views\AddNewTaskView.Designer.cs">
+      <DependentUpon>AddNewTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\Add Views\IAddNewProjectView.cs" />
+    <Compile Include="Views\Project Manager\Add Views\IAddNewTaskView.cs" />
+    <Compile Include="Views\Project Manager\Add Views\IProjectManagerAddMenuView.cs" />
+    <Compile Include="Views\Project Manager\IProjectManagerView.cs" />
+    <Compile Include="Views\Project Manager\Modify Views\IModifyTaskView.cs" />
+    <Compile Include="Views\Project Manager\Modify Views\IProjectManagerModifyMenuView.cs" />
+    <Compile Include="Views\Project Manager\Modify Views\ModifyTaskView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\Modify Views\ModifyTaskView.Designer.cs">
+      <DependentUpon>ModifyTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerAddMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerAddMenuView.Designer.cs">
+      <DependentUpon>ProjectManagerAddMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerModifyMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerModifyMenuView.Designer.cs">
+      <DependentUpon>ProjectManagerModifyMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerView.Designer.cs">
+      <DependentUpon>ProjectManagerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerViewMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\ProjectManagerViewMenuView.Designer.cs">
+      <DependentUpon>ProjectManagerViewMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\View Menu\IProjectManagerViewMenuView.cs" />
+    <Compile Include="Views\Project Manager\View Menu\IViewMenuView.cs" />
+    <Compile Include="Views\Project Manager\View Menu\IViewTasksView.cs" />
+    <Compile Include="Views\Project Manager\View Menu\ViewProjectsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\View Menu\ViewProjectsView.Designer.cs">
+      <DependentUpon>ViewProjectsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Project Manager\View Menu\ViewTasksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Project Manager\View Menu\ViewTasksView.Designer.cs">
+      <DependentUpon>ViewTasksView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Migrations\201812202202133_Initial.resx">
+      <DependentUpon>201812202202133_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Add Views\AddNewProjectView.resx">
+      <DependentUpon>AddNewProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Add Views\AddNewTaskView.resx">
+      <DependentUpon>AddNewTaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Add Views\AddNewUserView.resx">
+      <DependentUpon>AddNewUserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\AdministratorAddMenuView.resx">
+      <DependentUpon>AdministratorAddMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\AdministratorDeleteMenuView.resx">
+      <DependentUpon>AdministratorDeleteMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\AdministratorModifyMenuView.resx">
+      <DependentUpon>AdministratorModifyMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\AdministratorView.resx">
+      <DependentUpon>AdministratorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\AdministratorViewMenuView.resx">
+      <DependentUpon>AdministratorViewMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Delete Views\DeleteProjectView.resx">
+      <DependentUpon>DeleteProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Delete Views\DeleteTaskView.resx">
+      <DependentUpon>DeleteTaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Delete Views\DeleteUserView.resx">
+      <DependentUpon>DeleteUserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Modify Views\ModifyProjectView.resx">
+      <DependentUpon>ModifyProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Modify Views\ModifyTaskView.resx">
+      <DependentUpon>ModifyTaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\Modify Views\ModifyUserView.resx">
+      <DependentUpon>ModifyUserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\View Views\ViewProjectsView.resx">
+      <DependentUpon>ViewProjectsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\View Views\ViewTasksView.resx">
+      <DependentUpon>ViewTasksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Administrator\View Views\ViewUsersView.resx">
+      <DependentUpon>ViewUsersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Developer\DeveloperModifyMenuView.resx">
+      <DependentUpon>DeveloperModifyMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Developer\DeveloperView.resx">
+      <DependentUpon>DeveloperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Developer\DeveloperViewMenuView.resx">
+      <DependentUpon>DeveloperViewMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Developer\Modify Views\ModifyTaskView.resx">
+      <DependentUpon>ModifyTaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Developer\View Views\ViewTasksView.resx">
+      <DependentUpon>ViewTasksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Project Manager\Add Views\AddNewProjectView.resx">
+      <DependentUpon>AddNewProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\Add Views\AddNewTaskView.resx">
+      <DependentUpon>AddNewTaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\Modify Views\ModifyTaskView.resx">
+      <DependentUpon>ModifyTaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\ProjectManagerAddMenuView.resx">
+      <DependentUpon>ProjectManagerAddMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\ProjectManagerModifyMenuView.resx">
+      <DependentUpon>ProjectManagerModifyMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\ProjectManagerView.resx">
+      <DependentUpon>ProjectManagerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\ProjectManagerViewMenuView.resx">
+      <DependentUpon>ProjectManagerViewMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\View Menu\ViewProjectsView.resx">
+      <DependentUpon>ViewProjectsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Project Manager\View Menu\ViewTasksView.resx">
+      <DependentUpon>ViewTasksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="PMSDBDataSet1.xsc">
+      <DependentUpon>PMSDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMSDBDataSet1.xss">
+      <DependentUpon>PMSDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Images\add.png" />
+    <Content Include="Resources\Images\delete.png" />
+    <Content Include="Resources\Images\edit.png" />
+    <Content Include="Resources\Images\newProject.png" />
+    <Content Include="Resources\Images\newTask.png" />
+    <Content Include="Resources\Images\newUser.png" />
+    <Content Include="Resources\Images\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.11.0\build\NUnit.props'))" />
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.11.2\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.11.2\build\net35\NUnit3TestAdapter.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
